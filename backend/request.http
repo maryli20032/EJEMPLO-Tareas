@@ -1,0 +1,57 @@
+###
+GET http://localhost:4000/api/notes HTTP/1.1
+
+###
+POST http://localhost:4000/api/notes HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"mi segunda nota",
+    "content": "contenido de la segunda nota",
+    "author": "autor de la segunda nota"
+    
+}
+
+###
+DELETE http://localhost:4000/api/notes/60ef6401f985ef14f05ee5e1 HTTP/1.1
+
+###
+PUT  http://localhost:4000/api/notes/60ef646ff985ef14f05ee5e5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title":"mi 1er nota",
+    "content": "contenido de la 1er nota",
+    "author": "autor de la 1er nota"
+}
+
+###
+GET http://localhost:4000/api/notes/60ef6401f985ef14f05ee5e1 HTTP/1.1
+
+###################################################
+
+###
+GET http://localhost:4000/api/users HTTP/1.1
+
+###
+POST http://localhost:4000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"pepi"
+   
+}
+
+###
+DELETE http://localhost:4000/api/users/60ef8f0e02b2311f0c398934 HTTP/1.1
+
+###
+PUT  http://localhost:4000/api/users/60ef8f0e02b2311f0c398934 HTTP/1.1
+Content-Type: application/json
+
+{
+    "username":"jshfdfuj"
+}
+
+###
+GET http://localhost:4000/api/users/60ef91e37e1d761dd8934862 HTTP/1.1
